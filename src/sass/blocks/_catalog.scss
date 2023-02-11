@@ -38,9 +38,12 @@
     }
     &__content {
         margin-top: 60px;
-        display: flex;
+        display: none;
         justify-content: space-between;
         flex-wrap: wrap;
+        &_active {
+            display: flex;
+        }
     }
     &-item {
         box-sizing: border-box;
@@ -79,6 +82,7 @@
             font-size: 14px;
             display: block;
             text-align: center;
+            text-transform: uppercase;
             color: #C70101;
             &:hover {
                 color: #C70101;
@@ -155,6 +159,21 @@
                     left: -12px;
                     top: 7px;
                 }
+            }
+        }
+        &__back {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(calc(-50% - 19px));
+            display: block;
+            color: #C70101;
+            font-size: 14px;
+            font-weight: 500;
+            text-decoration: underline;
+            text-transform: uppercase;
+            &:hover {
+                color: #C70101;
             }
         }
     }
