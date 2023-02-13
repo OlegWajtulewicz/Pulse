@@ -8,6 +8,11 @@
     font-size: 12px;
     text-transform: uppercase;
     color: #FFFFFF;
+    &:hover {
+        box-shadow: 5px 5px 20px rgb(78, 75, 75);
+        border: none;
+        transition: 0.5s all;
+    }
     &_main {
         margin-top: 67px;
         width: 300px;
@@ -26,5 +31,10 @@
         width: 135px;
         height: 44px;
         font-size: 14px;
+        &:hover {
+            box-shadow: 5px 5px 20px rgb(78, 75, 75);
+            border: none;
+            transition: 0.5s all;
+        }
     }
 }

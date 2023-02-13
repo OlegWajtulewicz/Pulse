@@ -27,6 +27,8 @@
         &:hover {
             color: #FFFFFF;
             text-decoration: none;
+            text-shadow: 5px 5px 20px rgb(78, 75, 75);
+            transition: 0.5s all;   
         }
     }
     &__contacts {

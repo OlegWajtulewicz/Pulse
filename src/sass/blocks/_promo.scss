@@ -56,5 +56,10 @@
             text-transform: uppercase;
             color: #FFFFFF;
         }
+        &:hover {
+            color:#FFFFFF;
+            text-shadow: 5px 5px 20px rgb(78, 75, 75);
+            transition: 0.5s all;
+        }
     }
 }

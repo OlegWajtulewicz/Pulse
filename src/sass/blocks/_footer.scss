@@ -17,25 +17,38 @@
         font-size: 20px;
         text-align: center;
         color: #FFFFFF;
+        line-height: 20px;
     }
     &__phone {
         display: block;
         font-weight: 700;
         font-size: 20px;
+        line-height: 20px;
         text-align: center;
         color: #FFFFFF;
         text-decoration: none;
         font-family: 'MuseoModerno';
         margin-bottom: 31px;
-
+        &:hover {
+            color:#FFFFFF;
+            text-shadow: 5px 5px 20px rgb(78, 75, 75);
+            transition: 0.5s all;
+        }
     }
     &__social-item {
-        display: inline-block;
+        width: 50px;
+        height: 50px;
+        margin: 0 15px;
+        &:hover {
+            box-shadow: 5px 5px 20px rgb(78, 75, 75);
+            border: none;
+            border-radius: 100%;
+            transition: 0.5s all;
+        }
+    }
+    &__social {
+        display: flex;
         justify-content: center;
         align-items: center;
-        width: 52px;
-        height: 52px;
-        //border: 2px solid #FFFFFF;
-        //border-radius: 100%;
     }
 }
