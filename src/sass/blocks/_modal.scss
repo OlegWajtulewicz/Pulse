@@ -24,6 +24,10 @@
         line-height: 21px;
         color: red;
         cursor: pointer;
+        @include _350 {
+            top: -25px;
+            right: 20px;
+        }
     }
     &__subtitle {
         color: #0d0d0d;
