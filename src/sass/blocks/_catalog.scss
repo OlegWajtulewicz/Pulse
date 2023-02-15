@@ -7,6 +7,11 @@
         justify-content: center;
         margin-bottom: 0;
         padding-left: 0;
+        @include _979 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+       }
     }
     &__tab {
         width: 220px;
@@ -23,6 +28,9 @@
         margin: 0 5px;
         cursor: pointer;
         transition: 0.5s all;
+        @include _979 {
+            margin-bottom: 5px;
+       }
         &:hover {
             box-shadow: 3px 3px 10px grey;
             border: none;
@@ -40,9 +48,13 @@
         margin-top: 60px;
         display: none;
         justify-content: space-between;
-        flex-wrap: wrap;
+        flex-wrap: wrap;    
         &_active {
             display: flex;
+            @include _979 {
+                display: flex;
+                justify-content: space-evenly;
+           }
         }
     }
     &-item {
@@ -186,4 +198,5 @@
             }
         }
     }
+
 }

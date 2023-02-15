@@ -1,5 +1,7 @@
 @import 'base/variables';
-@import 'base/mixins';
+//@import 'base/mixins';
+//@import 'path_file.scss';
+@import 'base/media_mixin';
 * {
     font-family: 'Museo Sans Cyrl', sans-serif;
 }
@@ -8,13 +10,15 @@
     position: relative;
     max-width: 950px;
     margin: 0 auto;
+    @include _1170 {
+        width: 100%;
+       }
 }
 @import 'blocks/promo';
 @import 'blocks/header.scss';
 @import 'blocks/buttons';
 @import 'blocks/advantages';
 @import 'blocks/titles';
-//@import 'media';
 @import 'blocks/consultation';
 @import 'blocks/forms';
 @import 'blocks/carousel';

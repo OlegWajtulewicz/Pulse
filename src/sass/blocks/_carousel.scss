@@ -4,6 +4,9 @@
         position: relative;
         margin: 0 auto;
         width: 750px;
+        @include _768 {
+            width: 100%;
+           }
     }
     .slick-prev, .slick-next {
         position: absolute;

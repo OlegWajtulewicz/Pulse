@@ -4,6 +4,7 @@ const sass        = require('gulp-sass')(require('sass'));
 const cleanCSS = require('gulp-clean-css');
 const autoprefixer = require('gulp-autoprefixer');
 const rename = require("gulp-rename");
+const gcmq = require('gulp-group-css-media-queries');
 
 gulp.task('server', function() {
 
@@ -31,3 +32,13 @@ gulp.task('watch', function() {
 })
 
 gulp.task('default', gulp.parallel('watch', 'server', 'styles'));
+
+
+//'_media-mixin.scss'
+
+gulp.task('css:build', function() {
+	return gulp.src(['!src/_*.scss','src/*.scss']) // Взяли файлы с расширением .scss, исключили из выборки файлы, которые начинаются с символа _
+		.pipe(sass()) // компилируем scss в css
+		.pipe(gcmq()) // в полученном css группируем множество медиа-выражений в общие.
+		.pipe(gulp.dest('src/')) // кладем наш css файл в ту же папку
+});
