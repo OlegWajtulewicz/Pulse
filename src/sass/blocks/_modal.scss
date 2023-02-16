@@ -24,6 +24,10 @@
         line-height: 21px;
         color: red;
         cursor: pointer;
+        @include _480 {
+            top: -25px;
+            right: 0px;
+        }
         @include _350 {
             top: -25px;
             right: 20px;
