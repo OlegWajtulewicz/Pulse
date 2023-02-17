@@ -22,7 +22,7 @@
         text-transform: uppercase;
         color: #FFFFFF;
         @include _350 {
-            font-size: 37px;
+            font-size: 37px !important;
         }
     }
     &__subheader {
@@ -40,7 +40,7 @@
         display: flex;
         justify-content: space-between;
         @include _480 {
-            width: 100%;
+            width: 100% !important;
         }
     }
     &__icon {
