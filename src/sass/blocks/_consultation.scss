@@ -26,10 +26,10 @@
             padding: 0 90px;
         }
         @include _480 {
-            padding: 0 15%;
+            padding: 0 10%;
         }
         @include _350 {
-            padding: 0 10%;
+            padding: 0 5%;
         }
         .title_left {
             @include _600 {

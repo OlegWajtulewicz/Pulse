@@ -6,7 +6,7 @@
         width: 750px;
         @include _768 {
             width: 100%;
-           }
+            }
     }
     .slick-prev, .slick-next {
         position: absolute;
@@ -25,6 +25,12 @@
         left: auto;
         right: -66px; 
     }
+    .slick-slider {
+            @include _768 {
+                width: 100%;
+                } 
+        }
+    
 }
 
 
