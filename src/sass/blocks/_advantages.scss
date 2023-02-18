@@ -48,10 +48,16 @@
     }
     &__icon {
         &_animated {
-            animation: heartbeat 1.9s ease infinite;
+            animation: heartbeat 1.9s ease-in-out infinite;
             &:hover {
                 animation-play-state: paused;
             }
+        }
+        &_transform {
+            &:hover {
+               animation: cup 0.8s ease-in-out infinite alternate; 
+            }
+             
         }
     }
     
