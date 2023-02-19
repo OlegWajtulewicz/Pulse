@@ -17,3 +17,11 @@
         transform: rotate(360deg);
     }
 }
+@keyframes shoe {
+    from {
+        transform: perspective(400px) rotateY(0deg);
+    }
+    to {
+        transform: perspective(400px) translateZ(150px) rotateY(180deg);
+    }
+}

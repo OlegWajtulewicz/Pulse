@@ -59,6 +59,12 @@
             }
              
         }
+        &_shoe {
+            &:hover {
+                animation: shoe 1s ease-in-out infinite alternate;
+                animation-iteration-count: 2;
+            }
+        }
     }
     
 }
