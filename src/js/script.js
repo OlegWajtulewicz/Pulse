@@ -158,6 +158,24 @@ $(document).ready(function(){
 
     AOS.init();
 
+    window.addEventListener('DOMContentLoaded', () => {
+      const menu = document.querySelector('.main-navigation'),
+      menuItem = document.querySelectorAll('.main-navigation_item'),
+      burger = document.querySelector('.burger');
+  
+      burger.addEventListener('click', () => {
+          burger.classList.toggle('burger_active');
+          menu.classList.toggle('main-navigation_active');
+      });
+  
+      menuItem.forEach(item => {
+        item.addEventListener('click', () => {
+              burger.classList.toggle('burger_active');
+              menu.classList.toggle('main-navigation_active');
+          })
+      })
+  })
+
 });
       
 

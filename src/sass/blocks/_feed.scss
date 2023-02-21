@@ -7,7 +7,7 @@
         padding-bottom: 71px;
     }
     &__item {
-        display: flex;
+        display: flex !important;
         margin-top: 100px;
         &:nth-child(2) {
             margin-top: 70px;      
@@ -28,6 +28,11 @@
     &__text {
         padding-left: 62px;
         padding-right: 60px;
+        
+        @include _768 {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
     }
     &__subtitle {
         font-weight: 700;

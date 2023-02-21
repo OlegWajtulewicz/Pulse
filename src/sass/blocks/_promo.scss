@@ -1,4 +1,5 @@
 .promo {
+    position: relative;
     min-height: 650px;
     padding: 21px 0 93px 0;
     background: url(../img/bg.png) center (center/cover) no-repeat;
@@ -74,4 +75,43 @@
             transition: 0.5s all;
         }
     }
+    .burger {
+        display: none;
+        @include _768 {
+            display: block;
+		    position: fixed;
+		    right: 40px;
+		    top: 30px;
+		    transform: translateY(-50%);
+		    width: 40px;
+		    height: 12px;
+            z-index: 99;
+		    span {
+			    display: block; 
+			    height: 3px;
+			    width: 100%;
+			    background-color: #630c0c; 
+			    margin-bottom: 8px;
+			    transition: 0.9s all;
+                z-index: 99;
+            }
+		&_active { 
+            top: 107px;
+            right: 17px;
+			span {
+                background-color:white;
+				margin-bottom: -2px; 
+				&:nth-child(1) {
+					transform: translateY(3px) rotate(-45deg);
+                }
+				&:nth-child(2) {
+					display: none;
+                }
+				&:nth-child(3) {
+					transform: translateY(3px) rotate(45deg);
+                }
+            }
+        }
+    }
+}
 }

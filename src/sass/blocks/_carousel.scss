@@ -56,13 +56,16 @@
             &:hover, &:focus {
                 opacity: 0.8;
             }
+            &:focus {
+                outline: red;
         }
     }
     .slick-active {
         button {
-            background-color:#830a0a;
+            background-color:#130707;
+            border: none;
         }
     }
 }
 
-
+}
