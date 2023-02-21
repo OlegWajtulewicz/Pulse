@@ -8,7 +8,7 @@
         @include _979 {
             padding: 0 7%;
         }
-        @include _768 {
+        @include _767 {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -20,7 +20,7 @@
         align-items: center;
         max-width: 238px;
         background-color: white;
-        @include _768 {
+        @include _767 {
             margin-bottom: 30px;
             &:nth-child(3) {
                 margin-bottom: 0;

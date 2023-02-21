@@ -3,7 +3,7 @@
     @include _979 {
        padding: 0 15px 71px 20px; 
     }
-    @include _768 {
+    @include _767 {
         padding-bottom: 71px;
     }
     &__item {
@@ -12,7 +12,7 @@
         &:nth-child(2) {
             margin-top: 70px;      
         }
-        @include _768 {
+        @include _767 {
             display: flex;
             flex-direction: column;
             align-items:center;
@@ -21,15 +21,15 @@
     img {
         width: 169px;
         height: 169px; 
-        @include _768 {
+        @include _767 {
             margin-bottom: 20px;
         }
     }
     &__text {
         padding-left: 62px;
         padding-right: 60px;
-        
-        @include _768 {
+
+        @include _767 {
             padding-left: 20px;
             padding-right: 20px;
         }
@@ -38,7 +38,7 @@
         font-weight: 700;
         font-size: 18px;
         color: #0D0D0D;
-        @include _768 {
+        @include _767 {
             text-align: center;
         }
     }
@@ -46,7 +46,7 @@
         font-weight: 500;
         font-size: 14px;
         color: #646464;
-        @include _768 {
+        @include _767 {
             text-align: center;
         }
     }

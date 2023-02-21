@@ -4,7 +4,7 @@
         position: relative;
         margin: 0 auto;
         width: 750px;
-        @include _768 {
+        @include _767 {
             width: 100%;
             }
     }
@@ -26,7 +26,7 @@
         right: -66px; 
     }
     .slick-slider {
-            @include _768 {
+            @include _767 {
                 width: 100%;
                 } 
         }
