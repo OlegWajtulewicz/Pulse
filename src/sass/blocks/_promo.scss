@@ -68,6 +68,9 @@
             text-decoration: underline;
             text-transform: uppercase;
             color: #FFFFFF;
+            &:hover {
+                color: #FF0000;
+            }
         }
         &:hover {
             color:#FFFFFF;
@@ -77,7 +80,7 @@
     }
     .burger {
         display: none;
-        @include _767 {
+        @include _767 { 
             display: block;
 		    position: fixed;
 		    right: 40px;
@@ -110,6 +113,7 @@
 				&:nth-child(3) {
 					transform: translateY(3px) rotate(45deg);
                 }
+                
             }
         }
     }

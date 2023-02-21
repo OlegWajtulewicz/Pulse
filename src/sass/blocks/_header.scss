@@ -66,7 +66,7 @@
         right: -100%;
         background-color:rgb(0, 0, 0);
         width: 325px;
-        height: 50%;
+        height: 400px;
         opacity: 0.5;
         transition: 0.6s all;
         padding: 30px 20px;
@@ -83,9 +83,13 @@
             text-transform: uppercase;
             text-decoration-style: solid;
             font-family: 'Roboto';
+            &:hover {
+                color: #FF0000;
+            }
         }
         &_active {
             right: -2%;
-            
+            opacity: 0.8;
         }
+        
     } 
